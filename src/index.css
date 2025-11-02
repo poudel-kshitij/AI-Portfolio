@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb; /* light gray */
+  color: #1e293b; /* slate-800 */
+  line-height: 1.6;
+}
+
+:root{
+  --cream:#faf7f2;
+}
+body{ background:var(--cream); }
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.animate-fadeIn{animation:fadeIn .35s ease-in}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  border-radius: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
